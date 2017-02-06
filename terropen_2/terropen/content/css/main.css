@@ -1,0 +1,67 @@
+body{
+    color: #000;
+}
+
+.logodiv{
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    width: 400px;
+    overflow: hidden;
+}
+div#logodiv1{
+    background-color: #f00;
+    transition: transform 1s linear, height 1s linear, top 1s linear, line-height 1s linear, font-size 1s linear;
+}
+div#logodiv1.open{
+    top: 0px;
+    height: 200px;
+    transform: skewX(0deg);
+    line-height: 200px;
+    font-size: 50px;
+    
+    transition: transform 1s linear, height 1s linear, top 1s linear, line-height 1s linear, font-size 1s linear;
+}
+div#logodiv1.close{
+    top: 100px;
+    height: 0px;
+    line-height: 0px;
+    font-size: 0px;
+    transform: skewX(89deg);
+    
+    transition: transform 1s linear, height 1s linear, top 1s linear, line-height 1s linear, font-size 1s linear;
+}
+
+div#logodiv2{
+    background-color: #00f;
+    transition: transform 1s linear, height 1s linear, top 1s linear, line-height 1s linear, font-size 1s linear;
+}
+div#logodiv2.close{
+    font-size: 0px;
+    top: 100px;
+    transform: skewX(-89deg);
+    height: 0px;
+    line-height: 0px;
+    
+    transition: transform 1s linear, height 1s linear, top 1s linear, line-height 1s linear, font-size 1s linear;
+}
+div#logodiv2.open{
+    top: 0px;
+    height: 200px;
+    line-height: 200px;
+    font-size: 50px;
+    transform: skewX(0deg);
+    
+    transition: transform 1s linear, height 1s linear, top 1s linear, line-height 1s linear, font-size 1s linear;
+}
+
+/*
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+*/
+

@@ -1,0 +1,42 @@
+body{
+    color: #000;
+}
+
+div#maindiv_red{
+    color: #ffffff;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    transform: skewX(0deg);
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+    overflow: hidden;
+    
+    transition: transform 1s linear, height 1s linear, top 1s linear;
+}
+div#maindiv_red.close{
+    top: 200px;
+    height: 0px;
+    transform: skewX(89deg);
+    transition: transform 1s linear, height 1s linear, top 1s linear;
+}
+div#maindiv_blue{
+    color: #ffffff;
+    top: 200px;
+    height: 0px;
+    transform: skewX(-89deg);
+    position: fixed;
+    left: 100px;
+    width: 200px;
+    background-color: #00f;
+    overflow: hidden;
+    
+    transition: transform 1s linear, height 1s linear, top 1s linear;
+}
+div#maindiv_blue.open{
+    top: 100px;
+    height: 200px;
+    transform: skewX(0deg);
+    transition: transform 1s linear, height 1s linear, top 1s linear;
+}

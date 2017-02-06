@@ -1,0 +1,64 @@
+body{
+    color: #fff;
+    background-color: #1f1f1f;
+    padding: 0px;
+    margin: 0px;
+}
+
+.logodiv{
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    width: 80%;
+    overflow: hidden;
+    background-color: #0e1127;
+}
+/*div#logodiv1{ }*/
+div#logodiv1.open{
+    top: 0px;
+    height: 200px;
+    transform: skewX(0deg);
+    line-height: 200px;
+    font-size: 50px;
+    
+    transition: transform 1s ease-out, height 1s ease-out, top 1s ease-out, line-height 1s ease-out, font-size 1s ease-out;
+}
+div#logodiv1.close{
+    top: 100px;
+    height: 0px;
+    transform: skewX(89deg);
+    line-height: 0px;
+    font-size: 0px;
+    
+    transition: transform 1s ease-in, height 1s ease-in, top 1s ease-in, line-height 1s ease-in, font-size 1s ease-in;
+}
+
+/*div#logodiv2{ }*/
+div#logodiv2.open{
+    top: 0px;
+    height: 200px;
+    transform: skewX(0deg);
+    line-height: 200px;
+    font-size: 50px;
+    
+    transition: transform 1s ease-out, height 1s ease-out, top 1s ease-out, line-height 1s ease-out, font-size 1s ease-out;
+}
+div#logodiv2.close{
+    top: 100px;
+    height: 0px;
+    transform: skewX(-89deg);
+    line-height: 0px;
+    font-size: 0px;
+    
+    transition: transform 1s ease-in, height 1s ease-in, top 1s ease-in, line-height 1s ease-in, font-size 1s ease-in;
+}
+
+#content{
+    position: absolute;
+    left: 0px;
+    top: 300px;
+    overflow: auto;
+    text-align: justify;
+    padding: 5px;
+}
+
