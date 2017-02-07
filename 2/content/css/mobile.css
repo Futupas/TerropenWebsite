@@ -6,7 +6,8 @@ body{
 }
 #logocen{
     position: absolute; top: 50px; width: 100%; left: 0px; height: 100px;
-    perspective: 200px;
+    perspective: 1000px;
+    z-index: 2;
 }
 
 .logodiv{
@@ -19,6 +20,7 @@ body{
     background-color: #0e1127;
     line-height: 500px;
     font-size: 100px;
+    border: 1px solid #ffffff;
     transition: transform 1s linear, height 1s linear, top 1s linear, line-height 1s linear;
 }
 div#logodiv > span{
@@ -27,22 +29,22 @@ div#logodiv > span{
 }
 
 div#logodiv.nick{
-    transform: rotateX(0deg);
+    transform: rotateY(0deg);
 }
 div#logodiv.nick > span{
-    transform: scaleY(1);
+    transform: scaleX(1);
 }
 
 div#logodiv.name{
-    transform: rotateX(180deg);
+    transform: rotateY(180deg);
 }
 div#logodiv.name > span{
-    transform: scaleY(-1);
+    transform: scaleX(-1);
 }
-
 
 #content{
     position: absolute;
+    z-index: 1;
     left: 0px;
     top: 600px;
     overflow: auto;
