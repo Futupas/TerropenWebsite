@@ -1,0 +1,31 @@
+#logocen{
+    position: absolute; top: 50px; width: 100%; left: 0px; height: 100px;
+    perspective: 1000px;
+}
+
+.logodiv{
+    width: 80%;
+    height: 500px;
+    line-height: 500px;
+    font-size: 100px;
+}
+
+
+div#logodiv.nick{
+    transform: rotateY(0deg);
+}
+div#logodiv.nick > span{
+    transform: scaleX(1);
+}
+
+div#logodiv.name{
+    transform: rotateY(180deg);
+}
+div#logodiv.name > span{
+    transform: scaleX(-1);
+}
+
+#content{
+    left: 0px;
+    top: 600px;
+}

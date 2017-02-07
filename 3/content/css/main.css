@@ -1,0 +1,31 @@
+body{
+    color: #fff;
+    background-color: #1f1f1f;
+    padding: 0px;
+    margin: 0px;
+}
+
+#logocen{
+    z-index: 2;
+}
+
+.logodiv{
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+    background-color: #0e1127;
+    border: 1px solid #ffffff;
+    transition: transform 1s linear, height 1s linear, top 1s linear, line-height 1s linear;
+}
+div#logodiv > span{
+    display: inline-block;
+    transition: transform 0s linear 0.5s;
+}
+
+#content{
+    z-index: 1;
+    position: absolute;
+    overflow: auto;
+    text-align: justify;
+    padding: 5px;
+}
