@@ -17,6 +17,8 @@ body{
 div#logodiv1.open{
     top: 0px;
     height: 500px;
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
     transform: skewX(0deg);
     line-height: 500px;
     font-size: 100px;
@@ -26,6 +28,8 @@ div#logodiv1.open{
 div#logodiv1.close{
     top: 250px;
     height: 0px;
+    -ms-transform: skewX(45deg);
+    -webkit-transform: skewX(45deg);
     transform: skewX(45deg);
     line-height: 0px;
     font-size: 0px;
@@ -37,6 +41,8 @@ div#logodiv1.close{
 div#logodiv2.open{
     top: 0px;
     height: 500px;
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
     transform: skewX(0deg);
     line-height: 500px;
     font-size: 100px;
@@ -46,6 +52,8 @@ div#logodiv2.open{
 div#logodiv2.close{
     top: 250px;
     height: 0px;
+    -ms-transform: skewX(-45deg);
+    -webkit-transform: skewX(-45deg);
     transform: skewX(-45deg);
     line-height: 0px;
     font-size: 0px;
@@ -61,4 +69,3 @@ div#logodiv2.close{
     text-align: justify;
     padding: 5px;
 }
-

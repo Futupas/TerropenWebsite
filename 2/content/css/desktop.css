@@ -1,0 +1,57 @@
+body{
+    color: #fff;
+    background-color: #1f1f1f;
+    padding: 0px;
+    margin: 0px;
+}
+
+#logocen{
+    position: absolute; top: 50px; width: 100%; left: 0px; height: 100px;
+    perspective: 200px;
+}
+
+.logodiv{
+    text-align: center;
+    color: #ffffff;
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    background-color: #0e1127;
+    line-height: 200px;
+    font-size: 50px;
+    transition: transform 1s linear, height 1s linear, top 1s linear, line-height 1s linear;
+}
+div#logodiv > span{
+    display: inline-block;
+    transition: transform 0s linear 0.5s;
+}
+
+div#logodiv.nick{
+    transform: rotateX(0deg);
+    
+    /*transition: transform 1s linear, height 1s linear, top 1s linear, line-height 1s linear;*/
+}
+div#logodiv.nick > span{
+    transform: scaleY(1);
+}
+
+div#logodiv.name{
+    transform: rotateX(180deg);
+    
+    /*transition: transform 1s linear, height 1s linear, top 1s linear, line-height 1s linear;*/
+}
+div#logodiv.name > span{
+    transform: scaleY(-1);
+}
+
+#content{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 50%;
+    top: 300px;
+    overflow: auto;
+    text-align: justify;
+    padding: 5px;
+}
+
