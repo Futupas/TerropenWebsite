@@ -15,11 +15,11 @@ body{
     position: relative;
     color: #ffffff;
     width: 80%;
-    height: 500px;
+    height: 200px;
     overflow: hidden;
     background-color: #0e1127;
-    line-height: 500px;
-    font-size: 100px;
+    line-height: 200px;
+    font-size: 35px;
     border: 1px solid #ffffff;
     transition: transform 1s linear, height 1s linear, top 1s linear, line-height 1s linear;
 }
@@ -46,7 +46,8 @@ div#logodiv.name > span{
     position: absolute;
     z-index: 1;
     left: 0px;
-    top: 600px;
+    top: 300px;
+    font-size: 20px;
     overflow: auto;
     text-align: justify;
     padding: 5px;
