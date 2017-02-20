@@ -46,15 +46,31 @@ div#logodiv.name > span{
     transform: scaleY(-1);
 }
 
+
+
 #content{
     z-index: 1;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    width: 50%;
-    top: 300px;
+}
+#info{
+    font-size: 20px;
     overflow: auto;
     text-align: justify;
+    width: 50%;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    top: 300px;
+}
+#info > div{
     padding: 5px;
+}
+#photos{
+    background-color: #ff0000;
+    
+    position: fixed;
+    width: 50%;
+    bottom: 0px;
+    left: 0px;
+    top: 300px;
 }
 

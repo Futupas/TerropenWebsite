@@ -5,14 +5,13 @@ body{
     margin: 0px;
 }
 #logocen{
-    position: absolute; top: 50px; width: 100%; left: 0px; height: 100px;
-    perspective: 1000px;
+    position: absolute; top: 30px; width: 100%; left: 0px; height: 100px;
+    perspective: 500px;
     z-index: 2;
 }
 
 .logodiv{
     text-align: center;
-    position: relative;
     color: #ffffff;
     width: 80%;
     height: 200px;
@@ -22,33 +21,49 @@ body{
     font-size: 35px;
     border: 1px solid #ffffff;
     transition: transform 1s linear, height 1s linear, top 1s linear, line-height 1s linear;
+    backface-visibility: visible;
 }
-div#logodiv > span{
-    display: inline-block;
-    transition: transform 0s linear 0.5s;
-}
-
 div#logodiv.nick{
     transform: rotateY(0deg);
-}
-div#logodiv.nick > span{
-    transform: scaleX(1);
 }
 
 div#logodiv.name{
     transform: rotateY(180deg);
 }
-div#logodiv.name > span{
-    transform: scaleX(-1);
+
+div#logodiv > div.nick{
+    transform: scaleX(+1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #0e1127;
 }
+div#logodiv > div.name{
+    transform: scaleX(-1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #0e1127;
+}
+
+
 
 #content{
     position: absolute;
     z-index: 1;
     left: 0px;
-    top: 300px;
+    top: 260px;
+}
+#info{
     font-size: 20px;
     overflow: auto;
     text-align: justify;
     padding: 5px;
+}
+#photos{
+    background-color: #ff0000;
 }
