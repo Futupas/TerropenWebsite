@@ -5,15 +5,15 @@ function SkewLogo () {
     if (IsRed) {
         document.getElementById('logodiv').classList.add('name');
         document.getElementById('logodiv').classList.remove('nick');
-        /*setTimeout(function(){ 
+        setTimeout(function(){ 
             document.querySelector('#logodiv > span').innerHTML = 'Павло Новак';
-        }, 500);*/
+        }, 500);
     } else {
         document.getElementById('logodiv').classList.add('nick');
         document.getElementById('logodiv').classList.remove('name');
-        /*setTimeout(function(){ 
+        setTimeout(function(){ 
             document.querySelector('#logodiv > span').innerHTML = 'TERROPEN';
-        }, 500);*/
+        }, 500);
     }
     IsRed = !IsRed;
     Timeout = setTimeout(SkewLogo, 10000);
