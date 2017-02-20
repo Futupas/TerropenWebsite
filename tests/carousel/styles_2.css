@@ -1,0 +1,59 @@
+#carousel{
+    position: fixed;
+    top: 100px;
+    left: 100px;
+
+    width: 200px;
+    height: 100px;
+
+    background-color: #ff0000;
+}
+#carousel > img{
+    position: relative;
+    background-color: #000000;
+    width: 200px;
+    height: 100px;
+    animation: Carousel1 1s linear;
+}
+#carousel > img.class{
+    animation: Carousel2 1s linear; 
+}
+
+@keyframes Carousel1{
+    0%{
+        left: 0px;
+        opacity: 1;
+        transform: rotateZ(0deg);
+        width: 200px;
+    }
+    50%{
+        left: 100px;
+        opacity: 0;
+        width: 0px;
+    }
+    100%{
+        left: 0px;
+        opacity: 1;
+        transform: rotateZ(360deg);
+        width: 200px;
+    }
+}
+@keyframes Carousel2{
+    0%{
+        left: 0px;
+        opacity: 1;
+        transform: rotateZ(360deg);
+        width: 200px;
+    }
+    50%{
+        left: 100px;
+        opacity: 0;
+        width: 0px;
+    }
+    100%{
+        left: 0px;
+        opacity: 1;
+        transform: rotateZ(0deg);
+        width: 200px;
+    }
+}

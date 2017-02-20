@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles_2.css">
+</head>
+<body>
+    <div id="carousel">
+        <img id="image" src="https://static.pexels.com/photos/24353/pexels-photo.jpg" alt="" width="200px" height="100px">
+    </div>
+
+    <script>
+        function Carousel () {
+            var img = document.getElementById('image');
+
+            img.classList.toggle('class');
+            setTimeout(function () {
+                if (img.src === 'https://static.pexels.com/photos/24353/pexels-photo.jpg')
+                img.src = 'https://static.pexels.com/photos/170811/pexels-photo-170811.jpeg'; else
+                img.src = 'https://static.pexels.com/photos/24353/pexels-photo.jpg';
+            }, 500);
+        }
+
+        setInterval(function () { Carousel(); }, 2000);
+    </script>
+</body>
+</html>
