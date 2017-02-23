@@ -3,6 +3,7 @@ body{
     background-color: #1f1f1f;
     padding: 0px;
     margin: 0px;
+    overflow-x: hidden;
 }
 #logocen{
     position: absolute; top: 30px; width: 100%; left: 0px; height: 100px;
