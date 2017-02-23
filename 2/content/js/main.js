@@ -18,5 +18,14 @@ function SkewLogo () {
     IsRed = !IsRed;
     Timeout = setTimeout(SkewLogo, 10000);
 }
-
 document.getElementById('logodiv').onclick = SkewLogo;
+
+
+document.getElementById('prevphoto').onmouseover = function () {
+    document.getElementById('cphoto').style.animation = 'rotatePrev 0.7s ease-in';
+    setTimeout(function () { document.getElementById('cphoto').style.animation = 'none'; }, 700);
+}
+document.getElementById('nextphoto').onmouseover = function () {
+    document.getElementById('cphoto').style.animation = 'rotateNext 0.7s ease-in';
+    setTimeout(function () { document.getElementById('cphoto').style.animation = 'none'; }, 700);
+}
