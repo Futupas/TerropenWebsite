@@ -6,7 +6,7 @@ body{
 }
 #logocen{
     position: absolute; top: 30px; width: 100%; left: 0px; height: 100px;
-    perspective: 500px;
+    perspective: 200px;
     z-index: 2;
 }
 
@@ -28,17 +28,17 @@ div#logodiv > span{
 }
 
 div#logodiv.nick{
-    transform: rotateY(0deg);
+    transform: rotateX(0deg);
 }
 div#logodiv.nick > span{
     transform: scaleY(1);
 }
 
 div#logodiv.name{
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
 }
 div#logodiv.name > span{
-    transform: scaleX(-1);
+    transform: scaleY(-1);
 }
 
 

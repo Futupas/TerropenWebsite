@@ -72,5 +72,5 @@ div#logodiv.name > span{
     bottom: 0px;
     left: 0px;
     top: 300px;
+    overflow: hidden;
 }
-
