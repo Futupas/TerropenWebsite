@@ -29,22 +29,31 @@
     <script src="content/js/device.js"></script>
     <script>
         if (Device.IsMobile()) {
-
+            var styles = document.createElement('link');
+            styles.setAttribute('rel', 'stylesheet');
+            styles.setAttribute('href', '/content/page/mobile.css');
+            document.head.appendChild(styles);
         } else {
-            var xhr = new XMLHttpRequest();
-
             var styles = document.createElement('link');
             styles.setAttribute('rel', 'stylesheet');
             styles.setAttribute('href', '/content/page/desktop.css');
             document.head.appendChild(styles);
-
-            xhr.open('GET', '/content/page/main.html', true);
-            xhr.send();
-            xhr.onreadystatechange = function() {
-                if (xhr.status == 200) {
-                    document.getElementById('content').innerHTML = xhr.responseText;
-                    console.dir(xhr.responseText);
-                }
+        }
+        
+        var body_xhr = new XMLHttpRequest();
+        body_xhr.open('GET', '/content/page/main.html', true);
+        body_xhr.send();
+        body_xhr.onreadystatechange = function() {
+            if (body_xhr.status == 200) {
+                document.getElementById('content').innerHTML = body_xhr.responseText;
+            }
+        }
+        var script_xhr = new XMLHttpRequest();
+        script_xhr.open('GET', '/content/page/script.js', true);
+        script_xhr.send();
+        script_xhr.onreadystatechange = function() {
+            if (script_xhr.status == 200) {
+                eval(script_xhr.responseText);
             }
         }
     </script>
