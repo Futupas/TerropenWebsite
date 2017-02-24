@@ -2,10 +2,10 @@
 // (c) 2014 Matthew Hudson
 
 var Device = {
-    find = function (needle) {
+    find: function (needle) {
         return window.navigator.userAgent.toLowerCase().indexOf(needle) !== -1;
     },
-    IsMobile = function () {
+    IsMobile: function () {
         return (!Device.find('windows') && Device.find('android') && Device.find('mobile')) || 
             (!Device.find('windows') && Device.find('iphone')) || 
             (Device.find('ipod')) || 
