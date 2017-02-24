@@ -29,10 +29,14 @@ document.getElementById('nextphoto').onclick = function () {
 
 var Photos = {
     ph: [
-        'QR1Khs', 
-        'sNHIkbI', 
-        'zAMCHE', 
-        'zmuTHK'
+        '/content/img/image_01.jpg', 
+        '/content/img/image_02.jpg', 
+        '/content/img/image_03.jpg', 
+        '/content/img/image_04.jpg', 
+        '/content/img/image_05.jpg', 
+        '/content/img/image_06.jpg', 
+        '/content/img/image_07.jpg', 
+        '/content/img/image_08.jpg'
     ],
     current: 0,
     goprev: function () {
@@ -52,13 +56,14 @@ var Photos = {
             Photos.current = 0;
             rotateImg(Photos.current*180, Photos.ph[Photos.current])
         }
-    },
+    }
 }
+rotateImg(Photos.current*180, Photos.ph[Photos.current]);
 
 function rotateImg(angle, src){
     var cp = document.getElementById('cphoto');
     cp.style.transition = 'transform 0.8s linear, background 0.8s linear';
-    cp.style.background = 'url("file:///C:/Users/Alex/Pictures/Wall/Computer/'+src+'.jpg") center no-repeat';
+    cp.style.background = 'url("'+src+'") center no-repeat';
     cp.style.backgroundSize = 'contain';
     cp.style.transform = 'rotateY('+angle+'deg)';
 }

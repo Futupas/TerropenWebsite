@@ -96,26 +96,3 @@ div#logodiv.name > span{
 #nextphoto{
     right: 0px;
 }
-
-/*@keyframes rotateNext{
-    0%{
-        transform: rotateY(0deg);
-    }
-    50%{
-        transform: rotateY(180deg);
-    }
-    100%{
-        transform: rotateY(0deg);
-    }
-}
-@keyframes rotatePrev{
-    0%{
-        transform: rotateY(0deg);
-    }
-    50%{
-        transform: rotateY(-7deg);
-    }
-    100%{
-        transform: rotateY(0deg);
-    }
-}*/
