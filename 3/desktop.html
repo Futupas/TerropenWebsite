@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport"           content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author"          content='Pawel "terropen" Nowak' />
+    <meta name="copyright"       content="Terropen, Ukraine Kyiv" />
+    <meta name="description"     content="Pawel Nowak's website" />
+    <meta name="keywords"        content="terropen" />
+    <meta name="Publisher-URL"   content="http://terropen.co.nf" />
+    <link href="./content/css/both.css" rel="stylesheet" />
+    <link href="./content/css/desktop.css" rel="stylesheet" />
+    <title>Terropen - особистий сайт Павла Новака</title>
+</head>
+<body>
+    <center id="logocen">
+        <div id="logodiv" class="logodiv nick">
+            <span>TERROPEN</span>
+        </div>
+    </center>
+
+
+    <div id="content">
+        
+    </div>
+    <script src="content/js/main.js"></script>
+
+    <script src="content/js/device.js"></script>
+    <script>
+        if (Device.IsMobile()) {
+
+        } else {
+            var xhr = new XMLHttpRequest();
+
+            var styles = document.createElement('link');
+            styles.setAttribute('rel', 'stylesheet');
+            styles.setAttribute('href', '/content/page/desktop.css');
+            document.head.appendChild(styles);
+
+            xhr.open('GET', '/content/page/main.html', true);
+            xhr.send();
+            xhr.onreadystatechange = function() {
+                if (xhr.status == 200) {
+                    document.getElementById('content').innerHTML = xhr.responseText;
+                    console.dir(xhr.responseText);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
