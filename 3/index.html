@@ -17,7 +17,7 @@
     <script> 
         document.getElementById('devicestyles').innerHTML = 
             (Device.IsMobile() ? 
-            "body{overflow-x:hidden;} #logocen{top:30px;perspective:50vw;} .logodiv{width:80%;font-size:35px;} #content{position:absolute;left:0px;top:260px;} #info{padding:5px;} #photos{perspective:100vw;height:300px;}" :
+            "body{overflow-x:hidden;} #logocen{top:30px;perspective:75vw;} .logodiv{width:80%;font-size:35px;} #content{position:absolute;left:0px;top:260px;} #info{padding:5px;} #photos{perspective:100vw;height:300px;}" :
             "body{overflow:hidden;} #logocen{top:50px;perspective:200px;} .logodiv{width:400px;font-size:50px;}");
     </script>
 </head>
@@ -34,15 +34,9 @@
     </div>
     <script src="content/js/main.js"></script>
 
-    <!--<script src="content/js/device.js"></script>-->
     <script>
         var styles = document.createElement('link');
         styles.setAttribute('rel', 'stylesheet');
-        // if (Device.IsMobile()) {
-        //     styles.setAttribute('href', '/content/page/mobile.css');
-        // } else {
-        //     styles.setAttribute('href', '/content/page/desktop.css');
-        // }
         styles.setAttribute('href', (Device.IsMobile() ? '/content/page/mobile.css' : '/content/page/desktop.css'));
         document.head.appendChild(styles);
         

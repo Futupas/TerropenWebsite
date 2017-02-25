@@ -45,3 +45,10 @@ function rotateImg(angle, src){
     cp.style.backgroundSize = 'contain';
     cp.style.transform = 'rotateY('+angle+'deg)';
 }
+
+for (var i = 0; i < Photos.ph.length; i++) {
+    var img = document.createElement('img');
+    img.style.display = 'none';
+    img.setAttribute('src', Photos.ph[i]);
+    document.body.appendChild(img);
+}
