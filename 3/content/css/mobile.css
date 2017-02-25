@@ -3,6 +3,7 @@ body{
 }
 #logocen{
     top: 30px;
+    -webkit-perspective: 50vw;
     perspective: 50vw;
 }
 
@@ -11,7 +12,7 @@ body{
     font-size: 35px;
 }
 
-#content{
+/*#content{
     position: absolute;
     left: 0px;
     top: 260px;
@@ -23,4 +24,4 @@ body{
 #photos{
     perspective: 100vw;
     height: 300px;
-}
+}*/

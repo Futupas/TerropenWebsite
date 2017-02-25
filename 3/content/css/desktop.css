@@ -4,6 +4,7 @@ body{
 
 #logocen{
     top: 50px;
+    -webkit-perspective: 200vw;
     perspective: 200px;
 }
 
