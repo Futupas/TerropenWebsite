@@ -9,15 +9,16 @@
     <meta name="description"     content="Pawel Nowak's website" />
     <meta name="keywords"        content="terropen" />
     <meta name="Publisher-URL"   content="http://terropen.co.nf" />
+    <link rel="shortcut icon" href="/content/favicon/favicon.ico" />
     <title>Terropen - особистий сайт Павла Новака</title>
 
     <link href="./content/css/both.css" rel="stylesheet" />
-    <script src="content/js/device.js"></script>
+    <script src="/content/js/device.js"></script>
     <style id="devicestyles"></style>
     <script> 
         document.getElementById('devicestyles').innerHTML = 
             (Device.IsMobile() ? 
-            "body{overflow-x:hidden;} #logocen{top:30px;perspective:75vw;} .logodiv{width:80%;font-size:35px;} #content{position:absolute;left:0px;top:260px;} #info{padding:5px;} #photos{perspective:100vw;height:300px;}" :
+            "body{overflow-x:hidden;} #logocen{top:30px;perspective:75vw;} .logodiv{width:80%;font-size:35px;}" :
             "body{overflow:hidden;} #logocen{top:50px;perspective:200px;} .logodiv{width:400px;font-size:50px;}");
     </script>
 </head>
@@ -32,7 +33,7 @@
     <div id="content">
         
     </div>
-    <script src="content/js/main.js"></script>
+    <script src="/content/js/main.js"></script>
 
     <script>
         var styles = document.createElement('link');
@@ -44,14 +45,14 @@
         body_xhr.open('GET', '/content/page/main.html', true);
         body_xhr.send();
         body_xhr.onreadystatechange = function() {
-            if (body_xhr.status == 200) {
+            if (body_xhr.status == 200 && body_xhr.readyState == 4) {
                 document.getElementById('content').innerHTML = body_xhr.responseText;
 
                 var script_xhr = new XMLHttpRequest();
                 script_xhr.open('GET', '/content/page/script.js', true);
                 script_xhr.send();
                 script_xhr.onreadystatechange = function() {
-                    if (script_xhr.status == 200) {
+                    if (script_xhr.status == 200 && script_xhr.readyState == 4) {
                         eval(script_xhr.responseText);
                     }
                 }

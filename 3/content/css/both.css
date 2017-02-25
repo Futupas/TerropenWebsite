@@ -20,7 +20,6 @@ body{
     background-color: #0e1127;
     line-height: 200px;
     border: 1px solid #ffffff;
-    /*transition: transform 1s linear, height 1s linear, top 1s linear, line-height 1s linear;*/
     transition: transform 1s linear;
 }
 div#logodiv > span{
