@@ -1,5 +1,14 @@
+@font-face{
+	font-family: 'MainFont1';
+	src: url('/content/font/Adigiana_Extreme.ttf');
+}
+
+.logodiv{
+    font-family: 'MainFont1';
+}
 #info{
-    font-size: 20px;
+	font-family: 'MainFont1';
+    font-size: 30px;
     overflow: auto;
     text-align: justify;
     width: 50%;

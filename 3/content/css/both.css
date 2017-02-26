@@ -13,6 +13,7 @@ body{
     z-index: 2;
 }
 .logodiv{
+    font-family: 'Times New Roman', Arial, Verdana;
     text-align: center;
     color: #ffffff;
     height: 200px;
