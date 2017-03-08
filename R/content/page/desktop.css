@@ -1,3 +1,4 @@
+/* styles 4 links */
 @font-face{
 	font-family: 'MainFont1';
 	src: url('/content/font/Adigiana_Extreme.ttf');
@@ -54,4 +55,21 @@
 }
 #nextphoto{
     right: 0px;
+}
+
+a,
+a:link,
+a:visited,
+a:link:visited{
+    color: #ff0;
+    text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus,
+a:visited:hover,
+a:visited:active,
+a:visited:focus{
+    color: #ff8d1b;
+    text-decoration: none;
 }
