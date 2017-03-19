@@ -5,15 +5,15 @@
     <meta name="viewport"           content="width=device-width, initial-scale=1.0" />
 
     <meta name="author"          content='Саша "terropen" Новак' />
-    <meta name="copyright"       content="Terropen, Ukraine Kyiv" />
-    <meta name="description"     content="Личный сайт Саши 'terropen' Новака." />
-    <meta name="keywords"        content="terropen, Саша Новак, Александр Новак, Олександр Новак, личный сайт, сайт, teroopen, Ноавк" />
+    <meta name="copyright"       content="Terropen, Ukraine Kyiv 2017" />
+    <meta name="description"     content="Саша 'terropen' Новак - личный сайт, моя интернет-визитка" />
+    <meta name="keywords"        content="terropen, Саша Новак, Александр Новак, Олександр Новак, личный сайт, сайт, teroopen, Ноавк, визитка, сайт-визитка, интернет-визитка, терропен" />
     <meta name="Publisher-URL"   content="http://terropen.co.nf" />
     <link rel="shortcut icon" href="/content/favicon/favicon.ico" />
     <title>Саша 'terropen' Новак. Личный сайт Александра Новака</title>
 
     <style>
-        body{color:#fff;background-color:#262626;padding:0;margin:0}#logocen{position:absolute;width:100%;left:0;height:100px;z-index:2}.logodiv{border-radius:30px;text-align:center;color:#fff;height:200px;overflow:hidden;background-color:#0e1127;line-height:200px;border:1px solid #fff;-webkit-transition:transform 1s linear;-moz-transition:transform 1s linear;transition:transform 1s linear}div#logodiv>span{display:inline-block;-webkit-transition:transform 0s linear .5s;-moz-transition:transform 0s linear .5s;transition:transform 0s linear .5s}div#logodiv.nick{-webkit-transform:rotateX(0);-ms-transform:rotateX(0);transform:rotateX(0)}div#logodiv.nick>span{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1)}div#logodiv.name{-webkit-transform:rotateX(180deg);-ms-transform:rotateX(180deg);transform:rotateX(180deg)}div#logodiv.name>span{-webkit-transform:scaleY(-1);-ms-transform:scaleY(-1);transform:scaleY(-1)}#content{z-index:1}
+body{color:#fff;background-color:#262626;padding:0;margin:0}#logocen{position:absolute;width:100%;left:0;height:100px;z-index:2}.logodiv{border-radius:30px;text-align:center;color:#fff;height:200px;overflow:hidden;background-color:#0e1127;line-height:200px;border:1px solid #fff;-webkit-transition:transform 1s linear;-moz-transition:transform 1s linear;transition:transform 1s linear}div#logodiv>span{display:inline-block;-webkit-transition:transform 0s linear .5s;-moz-transition:transform 0s linear .5s;transition:transform 0s linear .5s}div#logodiv.nick{-webkit-transform:rotateX(0);-ms-transform:rotateX(0);transform:rotateX(0)}div#logodiv.nick>span{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1)}div#logodiv.name{-webkit-transform:rotateX(180deg);-ms-transform:rotateX(180deg);transform:rotateX(180deg)}div#logodiv.name>span{-webkit-transform:scaleY(-1);-ms-transform:scaleY(-1);transform:scaleY(-1)}#content{z-index:1}#info{font-family:MainFont1;font-size:30px;overflow:auto;text-align:justify}h1{text-align:center;}
     </style>
     <script>
         var Device = {find:function(needle) {return window.navigator.userAgent.toLowerCase().indexOf(needle)!==-1;},IsMobile: function () {return (!Device.find('windows') && Device.find('android') && Device.find('mobile')) || (!Device.find('windows') && Device.find('iphone')) || (Device.find('ipod')) || (Device.find('windows') && Device.find('phone')) || ((Device.find('blackberry') || Device.find('bb10') || Device.find('rim')) && !Device.find('tablet')) || (((Device.find('(mobile;') || Device.find('(tablet;')) && Device.find('; rv:')) && Device.find('mobile')) || (Device.find('meego'));}}
@@ -22,8 +22,8 @@
     <script> 
         document.getElementById('devicestyles').innerHTML = 
             (Device.IsMobile() ? 
-            "body{overflow-x:hidden}#logocen{top:30px;-webkit-perspective:50vw;perspective:50vw}.logodiv{width:80%;font-size:35px}" :
-            "body{overflow:hidden}#logocen{top:50px;-webkit-perspective:200vw;perspective:200px}.logodiv{width:400px;font-size:50px}");
+            "body{overflow-x:hidden}#logocen{top:30px;-webkit-perspective:50vw;perspective:50vw}.logodiv{width:80%;font-size:35px}#content{position:absolute;left:0;top:260px}#info{padding:5px}h1{font-size:35px;}" :
+            "body{overflow:hidden}#logocen{top:50px;-webkit-perspective:200vw;perspective:200px}.logodiv{width:400px;font-size:50px}#info{width:50%;position:fixed;bottom:0;right:0;top:300px}#info>div{padding:0px 15px;z-index:2}h1{font-size:40px;}");
     </script>
 </head>
 <body>
@@ -37,7 +37,8 @@
     <div id="content">
         <div id="info">
             <div style="display: block;">
-                <p>Привет, я Саша Новак aka 'terropen', и я пишу этот пост просто для того, чтобы с вами поздороваться. Мне 15, я обычный парень, живу в Киеве и люблю технологии.</p>
+                <h1>Саша 'terropen' Новак</h1>
+                <p>Привет, меня зовут Саша, и я пишу этот пост просто для того, чтобы с вами поздороваться. Мне 15, я обычный парень, живу в Киеве и люблю технологии.</p>
                 <p>Но не только технологии, сфера моих интересов достаточно обширна: я люблю литературу (хотел написать, что преимущественно научную, но в последнее время все больше зачитываюсь романтиками Байроном и Мицкевичем), музыку (Ханс Циммер, Бетховен, Моцарт) и конечно кино. Но, все же, любимым исскуством для меня есть стендап. Я просто обожаю слушать остроты Джимми Карра и циничные рассуждения Карлина. Иногда слушаю Поперечного.</p>
                 <p>Мое любимое занятие - писать. Строгих рамок twitter, facebook и vk мне не хватает, я хочу самовыражения. И поэтому я решил: напишу свой сайт, без рамок и ограничений, сам выберу цвета и анимации. Собственно, его вы сейчас и читаете. Я - творческая личность, постоянно ищу вдохновления, и сайты для меня - способ самовыражения.</p>
                 <p>Но, несмотря на страсть к творчеству, я не могу назвать себя гуманитарием. Скорее даже наоборот. Я замечаю каждый неправильно употреблённый термин "вес", знаю, как вычислить силу Лоренца, и без проблем нахожу скалярное произведение векторов. Пишу программы на разных языках (начиная от HTML, и заканчивая C#). При желании добываю водород дома. Да, и я немного ленив...</p>
